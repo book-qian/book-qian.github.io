@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="追风少年">
 <meta property="og:description" content="padding 属性的妙用 内联元素 padding 不会影响布局 padding 支持百分百值，不论垂直方向还是水平方向都是相对于宽度计算的  padding 实现正方形123.box&amp;#123;    padding: 50%;&amp;#125; padding 宽高1：2123.box&amp;#123;    padding:50% 25%;&amp;#125; html 元素使用技巧因button 元素在很多">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-18T05:47:53.289Z">
+<meta property="og:updated_time" content="2019-11-18T11:20:26.322Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="追风少年" type="application/atom+xml">
@@ -184,8 +184,62 @@
 <h1 id="css-实现”三条杠”-分类图标效果-实际场景菜单切换使用"><a href="#css-实现”三条杠”-分类图标效果-实际场景菜单切换使用" class="headerlink" title="css 实现”三条杠” 分类图标效果 实际场景菜单切换使用"></a>css 实现”三条杠” 分类图标效果 实际场景菜单切换使用</h1><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class="icon-menu"&gt;&lt;div&gt;</span><br><span class="line"><span class="selector-class">.icon-menu</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: inline-block;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">140px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">35px</span> <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">10px</span> solid;</span><br><span class="line">    <span class="attribute">border-top</span>: <span class="number">10px</span> solid;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#000</span>;</span><br><span class="line">    <span class="attribute">background-clip</span>: content-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h1 id="css-实现双层原点图形-实际场景-分页器"><a href="#css-实现双层原点图形-实际场景-分页器" class="headerlink" title="css 实现双层原点图形 实际场景 分页器"></a>css 实现双层原点图形 实际场景 分页器</h1><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class="icon-radiuo"&gt;&lt;div&gt;</span><br><span class="line"><span class="selector-class">.icon-radiuo</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: inline-block;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">10px</span> solid;    </span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#000</span>;</span><br><span class="line">    <span class="attribute">background-clip</span>: content-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="margin-技巧"><a href="#margin-技巧" class="headerlink" title="margin 技巧"></a>margin 技巧</h1><p>只有元素符”充分利用可用空间”，无论垂直方向还是水平方向都可以通过margin来改变尺寸</p>
+<h3 id="1-流体布局"><a href="#1-流体布局" class="headerlink" title="1.流体布局"></a>1.流体布局</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class="box"&gt;</span><br><span class="line">    &lt;img src=""&gt;</span><br><span class="line">    &lt;p&gt;这是一大段文字这是一大段文字这是一大段文字这是一大段文字&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"><span class="selector-class">.box</span>&#123;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> <span class="selector-tag">img</span>&#123;</span><br><span class="line">    <span class="attribute">float</span>:left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.box</span> <span class="selector-tag">p</span>&#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">140px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-两端对齐布局-利用margin-增加容器可用宽度"><a href="#2-两端对齐布局-利用margin-增加容器可用宽度" class="headerlink" title="2.两端对齐布局 (利用margin 增加容器可用宽度)"></a>2.两端对齐布局 (利用margin 增加容器可用宽度)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ul&#123;</span><br><span class="line">    margin-right: -30px;</span><br><span class="line">&#125;</span><br><span class="line">ul li&#123;</span><br><span class="line">    float: left;</span><br><span class="line">    margin-right: 30px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>对于普通块状元素，在默认水平流情况下，margin只能改变左右方向的内部尺寸,垂直方向则无法改变</p>
+<h3 id="3-margin-负值与等高布局"><a href="#3-margin-负值与等高布局" class="headerlink" title="3.margin 负值与等高布局"></a>3.margin 负值与等高布局</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"colLeft"</span> <span class="attr">class</span>=<span class="string">"column-left"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h4</span>&gt;</span>正方观点<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>观点1<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"colRight"</span> <span class="attr">class</span>=<span class="string">"column-right"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h4</span>&gt;</span>反方观点<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>观点1<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"leftMore"</span> <span class="attr">value</span>=<span class="string">"更多正方观点"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">id</span>=<span class="string">"rightMore"</span> <span class="attr">value</span>=<span class="string">"更多反方观点"</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.column-left</span>,</span><br><span class="line"><span class="selector-class">.column-right</span> &#123;</span><br><span class="line">    <span class="attribute">margin-bottom</span>: -<span class="number">9999px</span>;</span><br><span class="line">    <span class="attribute">padding-bottom</span>: <span class="number">9999px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.column-left</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#34538b</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.column-right</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#cd0000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $ = <span class="function"><span class="keyword">function</span> (<span class="params">id</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">document</span>.getElementById(id);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 分栏元素</span></span><br><span class="line"><span class="keyword">var</span> colLeft = $(<span class="string">'colLeft'</span>), colRight = $(<span class="string">'colRight'</span>);</span><br><span class="line"><span class="comment">// 按钮元素</span></span><br><span class="line"><span class="keyword">var</span> leftMore = $(<span class="string">'leftMore'</span>), rightMore = $(<span class="string">'rightMore'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 序号</span></span><br><span class="line"><span class="keyword">var</span> indexLeft = <span class="number">1</span>, indexRight = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (colLeft &amp;&amp; colRight &amp;&amp; leftMore &amp;&amp; rightMore) &#123;</span><br><span class="line">    leftMore.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        indexLeft = indexLeft + <span class="number">1</span>;</span><br><span class="line">        colLeft.insertAdjacentHTML(<span class="string">'beforeend'</span>, <span class="string">'&lt;p&gt;观点'</span>+ indexLeft +<span class="string">'&lt;/p&gt;'</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">    rightMore.onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        indexRight = indexRight + <span class="number">1</span>;</span><br><span class="line">        colRight.insertAdjacentHTML(<span class="string">'beforeend'</span>, <span class="string">'&lt;p&gt;观点'</span>+ indexRight +<span class="string">'&lt;/p&gt;'</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="4-margin-合并"><a href="#4-margin-合并" class="headerlink" title="4.margin 合并"></a>4.margin 合并</h3><p>块级元素的上外边距（margin-top）与下外边距（margin-bottom）有时会合并为单个外边距</p>
+<ol>
+<li>块级元素不包括浮动和绝对定位元素</li>
+<li>只发生在垂直方向（当前文档流方向相垂直的方向）</li>
+</ol>
+<p>margin 合并三种场景</p>
+<ol>
+<li>相邻兄弟元素margin 合并</li>
+<li>父级和第一个/最后一个子元素</li>
+<li>空块级元素的margin合并<br>对于 margin-top合并，可以进行如下操作（满足一个条件即可）</li>
+<li>父元素设置格式化上下文元素（overflow）</li>
+<li>父元素设置border-top值</li>
+<li>父元素设置padding-top值</li>
+<li>父元素和第一个子元素之间提交内联元素进行分割</li>
+</ol>
+<p>对于 margin-bottom合并，可以进行如下操作（满足一个条件即可）</p>
+<ol>
+<li>父元素设置格式化上下文元素（overflow）</li>
+<li>父元素设置border-bottom值</li>
+<li>父元素设置padding-bottom值</li>
+<li>父元素和第一个子元素之间提交内联元素进行分割</li>
+<li>父元素设置height 、min-height、max-height</li>
+</ol>
+<p>对于 空div margin合并，可以进行如下操作（满足一个条件即可）</p>
+<ol>
+<li>设置垂直方向的border</li>
+<li>设置垂直方向的padding</li>
+<li>里面添加内联元素</li>
+<li>设置height 、min-height</li>
+</ol>
+<p>margin 合并计算规则</p>
+<ol>
+<li>正正取大值 正负值相加 负负最负值</li>
+</ol>
+<h3 id="margin-auto-填充规则"><a href="#margin-auto-填充规则" class="headerlink" title="margin auto 填充规则"></a>margin auto 填充规则</h3><ol>
+<li>如果一侧有值，一侧auto,则auto为剩余空间大小</li>
+<li>如果两侧都是auto 则平分剩余空间</li>
+</ol>
+<h3 id="触发margin-auto-计算前提条件"><a href="#触发margin-auto-计算前提条件" class="headerlink" title="触发margin auto 计算前提条件"></a>触发margin auto 计算前提条件</h3><p>当宽度或高度auto时，元素是否有对应方向的自动填充特性</p>
+<h3 id="margin-无效情形罗列"><a href="#margin-无效情形罗列" class="headerlink" title="margin 无效情形罗列"></a>margin 无效情形罗列</h3><ol>
+<li>display 计算值inline的非替换元素的垂直margin是无效的。对于内联替换元素，垂直margin有效，并且没有margin合并的问题，所有图片永远不会发生margin合并</li>
+<li>表格中的tr td 元素或者设置display计算值是table-cell或table-row的元素的margin都是无效的。但是如果计算值是table-caption、table、inlin-table则没有问题，可以通过margin控制外间距。</li>
+<li>margin合并的时候更改margin值是没有任何效果的</li>
+<li>绝对定位元素单独渲染，margin 无效</li>
+<li>定高容器的子元素margin-bottom和宽度定死的子元素margin-right的定位失效</li>
+</ol>
 
       
 
@@ -293,6 +347,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/11/18/my-five-blog/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          my-five-blog
+        
+      </div>
+    </a>
   
   
     <a href="/2019/11/15/my-three-blog/" id="article-nav-older" class="article-nav-link-wrap">
