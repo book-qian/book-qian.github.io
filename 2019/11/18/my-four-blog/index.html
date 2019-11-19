@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>my-four-blog | 追风少年</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="padding 属性的妙用 内联元素 padding 不会影响布局 padding 支持百分百值，不论垂直方向还是水平方向都是相对于宽度计算的  padding 实现正方形123.box&amp;#123;    padding: 50%;&amp;#125; padding 宽高1：2123.box&amp;#123;    padding:50% 25%;&amp;#125; html 元素使用技巧因button 元素在很多">
+  <meta name="description" content="padding 属性的妙用 内联元素 padding 不会影响布局 padding 支持百分百值，不论垂直方向还是水平方向都是相对于宽度计算的">
 <meta name="keywords" content="css,html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="my-four-blog">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;18&#x2F;my-four-blog&#x2F;index.html">
 <meta property="og:site_name" content="追风少年">
-<meta property="og:description" content="padding 属性的妙用 内联元素 padding 不会影响布局 padding 支持百分百值，不论垂直方向还是水平方向都是相对于宽度计算的  padding 实现正方形123.box&amp;#123;    padding: 50%;&amp;#125; padding 宽高1：2123.box&amp;#123;    padding:50% 25%;&amp;#125; html 元素使用技巧因button 元素在很多">
+<meta property="og:description" content="padding 属性的妙用 内联元素 padding 不会影响布局 padding 支持百分百值，不论垂直方向还是水平方向都是相对于宽度计算的">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-18T11:20:26.322Z">
+<meta property="og:updated_time" content="2019-11-19T09:20:29.143Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="追风少年" type="application/atom+xml">
@@ -56,24 +56,27 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/">主页</a></li>
+				<li><a href="/archives/index.html">主页</a></li>
 	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
 			</ul>
 		</nav>
+		<nav>
+			总文章数 5
+		</nav>
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)" target="_blank" rel="noopener">所有文章</a>
+    			<a q-on="click: openSlider(e, 'innerArchive')" target="_parent" href="javascript:void(0)">所有文章</a>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)" target="_blank" rel="noopener">友链</a>
+    			<a q-on="click: openSlider(e, 'friends')" target="_parent" href="javascript:void(0)">友链</a>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)" target="_blank" rel="noopener">关于我</a>
+    			<a q-on="click: openSlider(e, 'aboutme')" target="_parent" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -136,7 +139,7 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/archives/index.html">主页</a></li>
 		        
 					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
@@ -175,11 +178,11 @@
       
         <h1 id="padding-属性的妙用"><a href="#padding-属性的妙用" class="headerlink" title="padding 属性的妙用"></a>padding 属性的妙用</h1><ol>
 <li>内联元素 padding 不会影响布局</li>
-<li>padding 支持百分百值，不论垂直方向还是水平方向都是相对于宽度计算的</li>
-</ol>
+<li>padding 支持百分百值，不论垂直方向还是水平方向都是相对于宽度计算的<a id="more"></a>
 <h1 id="padding-实现正方形"><a href="#padding-实现正方形" class="headerlink" title="padding 实现正方形"></a>padding 实现正方形</h1><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>&#123;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">50%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="padding-宽高1：2"><a href="#padding-宽高1：2" class="headerlink" title="padding 宽高1：2"></a>padding 宽高1：2</h1><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>&#123;</span><br><span class="line">    <span class="attribute">padding</span>:<span class="number">50%</span> <span class="number">25%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="html-元素使用技巧"><a href="#html-元素使用技巧" class="headerlink" title="html 元素使用技巧"></a>html 元素使用技巧</h1><p>因button 元素在很多浏览器尺寸不一致<br>使用 label元素模拟按钮</p>
+<h1 id="html-元素使用技巧"><a href="#html-元素使用技巧" class="headerlink" title="html 元素使用技巧"></a>html 元素使用技巧</h1>因button 元素在很多浏览器尺寸不一致<br>使用 label元素模拟按钮</li>
+</ol>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;button id="box"&gt;按钮&lt;/button&gt;</span><br><span class="line">&lt;label for="box"&gt;&lt;/label&gt;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">button</span>&#123;</span><br><span class="line">    <span class="attribute">positon</span>: absolute;</span><br><span class="line">    <span class="attribute">clip</span>: <span class="built_in">rect</span>(0 0 0 0)</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">label</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: inline-block;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="css-实现”三条杠”-分类图标效果-实际场景菜单切换使用"><a href="#css-实现”三条杠”-分类图标效果-实际场景菜单切换使用" class="headerlink" title="css 实现”三条杠” 分类图标效果 实际场景菜单切换使用"></a>css 实现”三条杠” 分类图标效果 实际场景菜单切换使用</h1><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class="icon-menu"&gt;&lt;div&gt;</span><br><span class="line"><span class="selector-class">.icon-menu</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: inline-block;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">140px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">35px</span> <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">10px</span> solid;</span><br><span class="line">    <span class="attribute">border-top</span>: <span class="number">10px</span> solid;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#000</span>;</span><br><span class="line">    <span class="attribute">background-clip</span>: content-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -379,6 +382,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#padding-属性的妙用"><span class="toc-number">1.</span> <span class="toc-text">padding 属性的妙用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#padding-实现正方形"><span class="toc-number">2.</span> <span class="toc-text">padding 实现正方形</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#padding-宽高1：2"><span class="toc-number">3.</span> <span class="toc-text">padding 宽高1：2</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#html-元素使用技巧"><span class="toc-number">4.</span> <span class="toc-text">html 元素使用技巧</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#css-实现”三条杠”-分类图标效果-实际场景菜单切换使用"><span class="toc-number">5.</span> <span class="toc-text">css 实现”三条杠” 分类图标效果 实际场景菜单切换使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#css-实现双层原点图形-实际场景-分页器"><span class="toc-number">6.</span> <span class="toc-text">css 实现双层原点图形 实际场景 分页器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#margin-技巧"><span class="toc-number">7.</span> <span class="toc-text">margin 技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-流体布局"><span class="toc-number">7.0.1.</span> <span class="toc-text">1.流体布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-两端对齐布局-利用margin-增加容器可用宽度"><span class="toc-number">7.0.2.</span> <span class="toc-text">2.两端对齐布局 (利用margin 增加容器可用宽度)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-margin-负值与等高布局"><span class="toc-number">7.0.3.</span> <span class="toc-text">3.margin 负值与等高布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-margin-合并"><span class="toc-number">7.0.4.</span> <span class="toc-text">4.margin 合并</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#margin-auto-填充规则"><span class="toc-number">7.0.5.</span> <span class="toc-text">margin auto 填充规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#触发margin-auto-计算前提条件"><span class="toc-number">7.0.6.</span> <span class="toc-text">触发margin auto 计算前提条件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#margin-无效情形罗列"><span class="toc-number">7.0.7.</span> <span class="toc-text">margin 无效情形罗列</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -483,6 +499,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">css</a>

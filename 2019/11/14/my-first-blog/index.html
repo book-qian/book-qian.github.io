@@ -9,14 +9,14 @@
   <title>CSS 世界 | 追风少年</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="width: 100%  你会用吗？ css中的宽度默认值是100% ，在块元素中，不设置具体高度，该元素默认高度就是100%">
-<meta name="keywords" content="前端 开发">
+<meta name="keywords" content="随笔">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS 世界">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;14&#x2F;my-first-blog&#x2F;index.html">
 <meta property="og:site_name" content="追风少年">
 <meta property="og:description" content="width: 100%  你会用吗？ css中的宽度默认值是100% ，在块元素中，不设置具体高度，该元素默认高度就是100%">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-14T03:32:02.838Z">
+<meta property="og:updated_time" content="2019-11-19T09:39:57.319Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="追风少年" type="application/atom+xml">
@@ -56,24 +56,27 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/">主页</a></li>
+				<li><a href="/archives/index.html">主页</a></li>
 	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
 			</ul>
 		</nav>
+		<nav>
+			总文章数 5
+		</nav>
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)" target="_blank" rel="noopener">所有文章</a>
+    			<a q-on="click: openSlider(e, 'innerArchive')" target="_parent" href="javascript:void(0)">所有文章</a>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)" target="_blank" rel="noopener">友链</a>
+    			<a q-on="click: openSlider(e, 'friends')" target="_parent" href="javascript:void(0)">友链</a>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)" target="_blank" rel="noopener">关于我</a>
+    			<a q-on="click: openSlider(e, 'aboutme')" target="_parent" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -136,7 +139,7 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/archives/index.html">主页</a></li>
 		        
 					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
@@ -174,7 +177,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="width-100-你会用吗？"><a href="#width-100-你会用吗？" class="headerlink" title="width: 100%  你会用吗？"></a>width: 100%  你会用吗？</h1><p> css中的宽度默认值是100% ，在块元素中，不设置具体高度，该元素默认高度就是100%</p>
-
+<a id="more"></a>
       
 
       
@@ -203,6 +206,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -277,11 +291,6 @@
     </a>
   
   
-    <a href="/2019/11/13/my-second-blog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">css 世界</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
 </nav>
 
 
@@ -297,6 +306,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#width-100-你会用吗？"><span class="toc-number">1.</span> <span class="toc-text">width: 100%  你会用吗？</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
@@ -402,6 +424,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">css</a>

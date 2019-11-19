@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>css技巧 | 追风少年</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="正在加载中…首先结构如下 1&amp;lt;div class=&quot;box&quot;&amp;gt;&amp;lt;&#x2F;div&amp;gt; 其次样式 12345678910111213141516171819202122.box&amp;#123;    display: inline-block;    height: 1em;    line-height: 1;    vertical-align: -.25em;    overflow">
+  <meta name="description" content="正在加载中…首先结构如下 1&amp;lt;div class=&quot;box&quot;&amp;gt;&amp;lt;&#x2F;div&amp;gt;">
 <meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css技巧">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;15&#x2F;my-three-blog&#x2F;index.html">
 <meta property="og:site_name" content="追风少年">
-<meta property="og:description" content="正在加载中…首先结构如下 1&amp;lt;div class=&quot;box&quot;&amp;gt;&amp;lt;&#x2F;div&amp;gt; 其次样式 12345678910111213141516171819202122.box&amp;#123;    display: inline-block;    height: 1em;    line-height: 1;    vertical-align: -.25em;    overflow">
+<meta property="og:description" content="正在加载中…首先结构如下 1&amp;lt;div class=&quot;box&quot;&amp;gt;&amp;lt;&#x2F;div&amp;gt;">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;15&#x2F;img&#x2F;more.gif">
-<meta property="og:updated_time" content="2019-11-15T06:44:47.377Z">
+<meta property="og:updated_time" content="2019-11-19T09:20:15.122Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;15&#x2F;img&#x2F;more.gif">
   
@@ -58,24 +58,27 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/">主页</a></li>
+				<li><a href="/archives/index.html">主页</a></li>
 	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
 			</ul>
 		</nav>
+		<nav>
+			总文章数 5
+		</nav>
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)" target="_blank" rel="noopener">所有文章</a>
+    			<a q-on="click: openSlider(e, 'innerArchive')" target="_parent" href="javascript:void(0)">所有文章</a>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)" target="_blank" rel="noopener">友链</a>
+    			<a q-on="click: openSlider(e, 'friends')" target="_parent" href="javascript:void(0)">友链</a>
     			
             
     			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)" target="_blank" rel="noopener">关于我</a>
+    			<a q-on="click: openSlider(e, 'aboutme')" target="_parent" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -138,7 +141,7 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 50%"><a href="/archives/index.html">主页</a></li>
 		        
 					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
@@ -177,6 +180,7 @@
       
         <h1 id="正在加载中…"><a href="#正在加载中…" class="headerlink" title="正在加载中…"></a>正在加载中…</h1><p>首先结构如下</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>其次样式</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">    display: inline-block;</span><br><span class="line">    height: 1em;</span><br><span class="line">    line-height: 1;</span><br><span class="line">    vertical-align: -.25em;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">&#125;</span><br><span class="line">.box:before&#123;</span><br><span class="line">    display: block;</span><br><span class="line">    content: &apos;...\A..\A.&apos;;</span><br><span class="line">    white-space: pre-wrap;</span><br><span class="line">    animate: move 3s infinite step-start both;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@keyframs move &#123;</span><br><span class="line">    33%&#123;</span><br><span class="line">        transform: translateY(-2em);</span><br><span class="line">    &#125;</span><br><span class="line">    66%&#123;</span><br><span class="line">        transform: translateY(-1em);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -317,6 +321,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#正在加载中…"><span class="toc-number">1.</span> <span class="toc-text">正在加载中…</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -421,6 +438,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">随笔</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">css</a>
