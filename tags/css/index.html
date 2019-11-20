@@ -61,8 +61,8 @@
 	        
 			</ul>
 		</nav>
-		<nav>
-			总文章数 5
+		<nav class="header-smart-menu">
+			<a href="javascript:void(0)" target="_parent">总文章数 6</a> 
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -305,11 +305,14 @@
     		&copy; 2019 book-qian
     	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      		<!-- <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten -->
       	</div>
     </div>
   </div>
 </footer>
+
+<!--页面点击小红心-->
+<script type="text/javascript" src="/love.js"></script>
     </div>
     <script>
 	var yiliaConfig = {
@@ -389,6 +392,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">兼容</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color4">css</a>
               </li>
              
@@ -459,8 +466,20 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+        
+  	  		<div class="aboutme-wrap">
+            <div>
+              <script type="text/javascript" src="https://api.lwl12.com/hitokoto/v1?encode=js&charset=utf-8"></script>
+              <p style="margin:0 20px 0 20px;">
+                <span id="lwlhitokoto">
+                  <script>
+                    lwlhitokoto();
+                  </script>
+                </span>
+              </p>
+              <p id="js-aboutme" style="margin:0 20px 0 20px;">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</P>
+            </div>
+          </div>
   	  	
     	</section>
     
